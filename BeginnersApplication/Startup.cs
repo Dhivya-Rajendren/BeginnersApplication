@@ -24,15 +24,17 @@ namespace BeginnersApplication
         {
 
 
-            app.UseDefaultFiles();
-                   app.UseStaticFiles();
-        }
-    }
-}
-/*
- *    FileServerOptions fileServerOptions = new FileServerOptions();
+            //app.UseDefaultFiles();
+            //       app.UseStaticFiles();
+            FileServerOptions fileServerOptions = new FileServerOptions();
             fileServerOptions.DefaultFilesOptions.DefaultFileNames.Clear();
             fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("home.html");
             fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("home.htm");
 
-            app.UseFileServer(fileServerOptions);*/
+            app.UseFileServer(fileServerOptions);
+
+        }
+    }
+}
+/*
+ *    */
